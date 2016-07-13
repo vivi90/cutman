@@ -84,12 +84,13 @@
 	height: 16vmin;
 	float: right; 
 	margin-top: -16vmin;
+	margin-right: 0em;
 }
 
 #check-x-notch {
 	width: 16vmin;
 	height: 14vmin;
 	float: right;
-	margin-right: 16vmin;
+	margin-right: 15vmin;
 	margin-top: -16vmin;
 }
