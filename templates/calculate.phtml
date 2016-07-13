@@ -6,7 +6,7 @@
 		<meta name="description" content="">
 		<meta name="author" content="Vivien Richter">
 		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="stylesheet" href="<?= BASEPATH.DIRECTORY_SEPARATOR.'themes'.DIRECTORY_SEPARATOR.CFG_THEME.DIRECTORY_SEPARATOR.'css'.DIRECTORY_SEPARATOR.'calculate.css' ?>">
+		<link rel="stylesheet" href="<?= 'themes'.DIRECTORY_SEPARATOR.CFG_THEME.DIRECTORY_SEPARATOR.'css'.DIRECTORY_SEPARATOR.'calculate.css' ?>">
 	</head>
 
 	<body>
@@ -14,7 +14,40 @@
 			<h1><?= LC_HEADLINE ?></h1>
 		</header>
 
-		<div>
+		<div id="cut" style="border: solid black">
+			<div class="arrow arrow-vertical">
+				&uarr;<input type="text" size="5">&darr;
+			</div>
+			<div>
+				<span class="arrow sheet-left">
+					&larr;<input type="text" size="5">&rarr;
+				</span>
+				<div class="sheet sheet-left"></div>
+				<span class="arrow sheet-left">
+					&larr;<input type="text" size="5">&rarr;
+				</span>
+				<div class="sheet sheet-top-right">
+					<span class="arrow sheet-left">
+						&larr;<input type="text" size="5">&rarr;
+					</span>
+				</div>
+			</div>
+			<div class="arrow arrow-vertical">
+				&uarr;<input type="text" size="5">&darr;
+			</div>
+			<div class="sheet-row-bottom">
+				<div class="sheet sheet-left">
+					<div class="arrow arrow-vertical">
+						&uarr;<input type="text" size="5">&darr;
+					</div>
+				</div>
+				<div class="sheet sheet-bottom-right">
+					<div id="x-notch"></div>
+					<div id="y-notch"></div>
+				</div>
+				<input id="check-y-notch" type="checkbox">
+			</div>
+			<input id="check-x-notch" type="checkbox">
 		</div>
 
 		<footer>
