@@ -1,8 +1,15 @@
 /* Calculation form */
+#calc {
+	width: 81vmin;
+	height: 80vmin;
+}
+
 #cut {
 	width: 81vmin;
 	height: 80vmin;
 	background-color: #D8D8D8;
+	border: solid black;
+	float: left;
 }
 
 .sheet {
@@ -93,4 +100,26 @@
 	float: right;
 	margin-right: 15vmin;
 	margin-top: -16vmin;
+}
+
+#set {
+	width: 30vmin;
+	height: 18em;
+	background-color: #D8D8D8;
+	border: solid black;
+	margin-left: 85vmin;
+	padding: 0.5em;
+}
+
+.set {
+	width: 30vmin;
+	padding-bottom: 0.5em;
+}
+
+#set input {
+	margin-left: 0.5em;
+}
+
+#set_btn {
+	text-align: center;
 }

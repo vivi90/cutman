@@ -14,45 +14,59 @@
 			<h1><?= LC_HEADLINE ?></h1>
 		</header>
 
-		<div id="cut" style="border: solid black">
-			<div class="arrow arrow-vertical">
-				<span>&uarr;<input type="text" size="5">&darr;</span>
-			</div>
-			<div>
-				<div class="arrow arrow-horizontal sheet-left">
-					&larr;<input type="text" size="5">&rarr;
+		<div id="calc">
+			<div id="cut">
+				<div class="arrow arrow-vertical">
+					<span>&uarr;<input type="text" size="5">&darr;</span>
 				</div>
-				<div class="sheet sheet-left"></div>
-				<div class="arrow arrow-horizontal sheet-left">
-					&larr;<input type="text" size="5">&rarr;
-				</div>
-				<div class="sheet sheet-top-right">
-					<div class="arrow arrow-horizontal">
+				<div>
+					<div class="arrow arrow-horizontal sheet-left">
 						&larr;<input type="text" size="5">&rarr;
 					</div>
-				</div>
-			</div>
-			<div class="arrow arrow-vertical">
-				<span>&uarr;<input type="text" size="5">&darr;</span>
-			</div>
-			<div class="sheet-row-bottom">
-				<div class="sheet sheet-left">
-					<div class="arrow arrow-vertical">
-						<span>&uarr;<input type="text" size="5">&darr;</span>
+					<div class="sheet sheet-left"></div>
+					<div class="arrow arrow-horizontal sheet-left">
+						&larr;<input type="text" size="5">&rarr;
+					</div>
+					<div class="sheet sheet-top-right">
+						<div class="arrow arrow-horizontal">
+							&larr;<input type="text" size="5">&rarr;
+						</div>
 					</div>
 				</div>
-				<div class="sheet sheet-bottom-right">
-					<div id="x-notch"></div>
-					<div id="y-notch"></div>
+				<div class="arrow arrow-vertical">
+					<span>&uarr;<input type="text" size="5">&darr;</span>
 				</div>
-				<input id="check-y-notch" type="checkbox">
+				<div class="sheet-row-bottom">
+					<div class="sheet sheet-left">
+						<div class="arrow arrow-vertical">
+							<span>&uarr;<input type="text" size="5">&darr;</span>
+						</div>
+					</div>
+					<div class="sheet sheet-bottom-right">
+						<div id="x-notch"></div>
+						<div id="y-notch"></div>
+					</div>
+					<input id="check-y-notch" type="checkbox">
+				</div>
+				<input id="check-x-notch" type="checkbox">
 			</div>
-			<input id="check-x-notch" type="checkbox">
+		
+			<div id="set">
+				<div class="set"><label for="x1">x<sub>1</sub></label><input id="x1" disabled></div>
+				<div class="set"><label for="x2">x<sub>2</sub></label><input id="x2" disabled></div>
+				<div class="set"><label for="x3">x<sub>3</sub></label><input id="x3" disabled></div>
+				<div class="set"><label for="x_notch">x<sub>Nute</sub></label><input id="x_notch" disabled></div>
+				<div class="set"><label for="y1">y<sub>1</sub></label><input id="y1" disabled></div>
+				<div class="set"><label for="y2">y<sub>2</sub></label><input id="y2" disabled></div>
+				<div class="set"><label for="y3">y<sub>3</sub></label><input id="y3" disabled></div>
+				<div class="set"><label for="y_notch">y<sub>Nute</sub></label><input id="y_notch" disabled></div>
+				<div class="set" id="set_btn"><input type="button" value="<?= LC_BTN_CALC ?>"><input type="button" value="<?= LC_BTN_SAVE ?>" disabled></div>
+			</div>
 		</div>
-
+		
 		<footer>
 			<p>
-				&copy; Copyright 2016 by Vivien Richter
+				&copy; 2016 by Vivien Richter
 			</p>
 		</footer>
 	</body>
