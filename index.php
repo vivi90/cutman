@@ -18,6 +18,9 @@
 	// Include language file
 	include BASEPATH.DIRECTORY_SEPARATOR.'locale'.DIRECTORY_SEPARATOR.CFG_LANG.'.inc.php';
 	
+	// Create instance of Request
+	$request = new Request($_GET, $_POST);
+	
 	// Create instance of Model
 	$model = new Model();
 	
